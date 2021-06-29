@@ -16,7 +16,7 @@ public class Magnum implements Eatable{
 
     @Override
     public void eat() {
-        System.out.println("Please have this be.intecbrussel.eatables.Magnum with a " + Arrays.toString(MagnumType.values()) + "be.intecbrussel.eatables.Flavour");
+        System.out.println("Please have this Magnum with a " + type + "Flavour");
     }
 
     public MagnumType getType() {

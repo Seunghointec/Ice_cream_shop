@@ -1,7 +1,5 @@
 package be.intecbrussel.eatables;
 
-import be.intecbrussel.sellers.IceCreamSeller;
-
 import java.util.Arrays;
 
 public class Cone implements Eatable {
@@ -18,14 +16,7 @@ public class Cone implements Eatable {
 
     @Override
     public void eat() {
-
-        for (int i =0; i< ball.length; i++) {
-            if (ball.length == 1) {
-                System.out.println("please have a " + Arrays.toString(Flavour.values()));
-            }
-            if (ball.length < 3) {
-                System.out.println("please have a " + Arrays.toString(Flavour.values()));
-            }
-        }
+        System.out.println("Please have this cone Ice cream with a " +
+                Arrays.toString(ball) + "Flavour");
     }
 }
