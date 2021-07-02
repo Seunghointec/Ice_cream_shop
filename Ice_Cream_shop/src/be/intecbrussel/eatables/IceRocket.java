@@ -1,5 +1,6 @@
 package be.intecbrussel.eatables;
 
+//ice rocket class
 public class IceRocket implements Eatable{
 
     public IceRocket() {

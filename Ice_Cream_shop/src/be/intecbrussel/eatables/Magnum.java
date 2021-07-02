@@ -1,25 +1,27 @@
 package be.intecbrussel.eatables;
 
-import java.util.Arrays;
-
+//magnum class
 public class Magnum implements Eatable{
 
     MagnumType type;
 
+    //constructor
     public Magnum() {
-
+        this(MagnumType.BLACK_CHOCOLATE);
     }
 
-    public Magnum(MagnumType type) {
-        this.type = type;
+    public Magnum(MagnumType magnumType) {
+        type = magnumType;
     }
 
     @Override
     public void eat() {
-        System.out.println("Please have this Magnum with a " + type + "Flavour");
+        System.out.println("please have a " +getType());
     }
 
+    //getter
     public MagnumType getType() {
         return type;
     }
+
 }
